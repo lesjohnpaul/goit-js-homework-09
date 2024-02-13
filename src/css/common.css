@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+  transition: background-color 0.3s ease;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  height: 100vh;
+
+}
+
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  box-shadow: 1 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.start-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.stop-button {
+  background-color: #f44336;
+  color: white;
+}
+
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+/* button {
+  margin: 0 10px;
+
+} */
+
+.timer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  gap: 20px;
+  flex-wrap: wrap;
+  /* Wrap items if necessary */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  margin-bottom: 20px;
+  /* Add some margin below the container */
+}
+
+input[type="text"],
+button {
+  margin: 0 10px;
+  /* Add some spacing between input and button */
+}
+
+.field {
+  text-align: center;
+  margin: 10px;
+  /* Add some margin between fields */
+}
+
+.value-container {
+  text-align: center;
+}
+
+.value {
+  font-size: 3em;
+  /* Adjust the font size as needed */
+  display: block;
+}
+
+.label {
+  font-size: 1.5em;
+  /* Adjust the font size as needed */
+  display: block;
+}
